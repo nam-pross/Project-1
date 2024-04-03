@@ -9,11 +9,11 @@ app.set('views','./views');
 
 
 app.get("/",(req,res)=>{
-    res.send("123");
+    res.render("client/pages/home/index.pug")
 });
 
-app.get("/product",(req,res)=>{
-    res.send("Danh sách");
+app.get("/products",(req,res)=>{
+    res.render("client/pages/products/index");
 });
 
 app.listen(port, ()=>{
